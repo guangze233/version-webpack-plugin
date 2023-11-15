@@ -23,9 +23,9 @@ class VersionWebpackPlugin {
       path: _options?.path || "dist/index.html",
       version: _options?.path || "",
       suffix: {
-        date: false,
-        time: false,
-        timestamp: true,
+        date: true,
+        time: true,
+        timestamp: false,
       },
       callback: _options?.callback || null,
     };
